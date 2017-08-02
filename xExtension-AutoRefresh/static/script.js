@@ -6,7 +6,7 @@ $(document).ready(function() {
      });
 
      function refresh() {
-         if(new Date().getTime() - time >= 30000) 
+         if(new Date().getTime() - time >= 60000) 
              window.location.reload(true);
          else 
              setTimeout(refresh, 10000);
