@@ -7,5 +7,6 @@ To use it, upload the *xExtension-AutoRefresh* folder into your ./extensions dir
 # Changelog
 1.0
 - Initial release
+
 1.1
 - Merged pull request to add touch events for mobile, update to latest jQuery, fix event binding, and replace setTimeout with setInterval. All thanks to @sirideain 
