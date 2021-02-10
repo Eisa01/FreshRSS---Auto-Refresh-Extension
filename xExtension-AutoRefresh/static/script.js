@@ -1,10 +1,19 @@
-var time = new Date().getTime();
-$(document).bind("touchmove mousemove keypress", function () {
-    time = new Date().getTime();
-});
+const getNewTime = () => {
+    return new Date().getTime();
+};
+
+const resetTimer = () => {
+    time = getNewTime();
+};
+
+var time = getNewTime();
 
 setInterval(function() {
-    if (new Date().getTime() - time >= 60000) {
-        window.location.reload(true);
+    if (getNewTime() - time >= 60000) {
+        window.location.reload();
     }
 }, 30000);
+
+document.addEventListener("touchmove", resetTimer);
+document.addEventListener("mousemove", resetTimer);
+document.addEventListener("keypress", resetTimer);
