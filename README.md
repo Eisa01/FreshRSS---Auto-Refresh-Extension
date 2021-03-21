@@ -6,7 +6,7 @@ To use it, upload the *xExtension-AutoRefresh* folder into your ./extensions dir
 
 # Changelog
 1.3 [19/03/2021]
-- Merged pull request from [@aledeg](https://github.com/aledeg) toaAdd configurable refresh rate.
+- Merged pull request from [@aledeg](https://github.com/aledeg) to add configurable refresh rate.
 
 1.2 [10/02/2021]
 - Merged pull request from [@aledeg](https://github.com/aledeg) to remove jquery and use pure JavaScript instead.
