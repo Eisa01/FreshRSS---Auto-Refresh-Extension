@@ -1,3 +1,5 @@
+'use strict';
+
 const getNewTime = () => {
     return new Date().getTime();
 };
