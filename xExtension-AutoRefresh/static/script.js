@@ -13,17 +13,19 @@ const initTimer = () => {
         return setTimeout(initTimer, 50);
     }
 
-    const refreshRate = context.extensions["Auto Refresh"].configuration["refresh-rate"];
-    setInterval(() => {
-        if (getNewTime() - time >= refreshRate * 60000) {
-            window.location.reload();
-        }
-    }, refreshRate * 30000);
-}
+    if (document.getElementById('nav_menu_views')) {
+        const refreshRate = context.extensions["Auto Refresh"].configuration["refresh-rate"];
+        setInterval(() => {
+            if (getNewTime() - time >= refreshRate * 60000) {
+                window.location.reload();
+            }
+        }, refreshRate * 30000);
 
-document.addEventListener("touchmove", resetTimer);
-document.addEventListener("mousemove", resetTimer);
-document.addEventListener("keypress", resetTimer);
+        document.addEventListener("touchmove", resetTimer);
+        document.addEventListener("mousemove", resetTimer);
+        document.addEventListener("keypress", resetTimer);
+    }
+}
 
 window.onload = () => {
     initTimer();
