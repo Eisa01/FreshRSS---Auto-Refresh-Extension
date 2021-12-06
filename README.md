@@ -5,6 +5,9 @@ Automatically refreshes FreshRSS page once in a minute, when there is no activit
 To use it, upload the *xExtension-AutoRefresh* folder into your ./extensions directory and enable it on the extension panel in FreshRSS.
 
 # Changelog
+1.4 [12/06/2021]
+- Merged pull request from [@math-GH](https://github.com/math-GH) for German language, 'use-strict', and refresh to only affect view pages.
+
 1.3 [19/03/2021]
 - Merged pull request from [@aledeg](https://github.com/aledeg) to add configurable refresh rate.
 
