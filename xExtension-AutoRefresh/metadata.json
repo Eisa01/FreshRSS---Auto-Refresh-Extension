@@ -1,7 +1,7 @@
 {
 	"name": "Auto Refresh",
 	"author": "Essa AlAwadi",
-	"description": "Automatically refreshes the RSS feed when there is no activity",
+	"description": "Automatically refreshes the FreshRSS WEB PAGE when there is no activity",
 	"version": 1.3,
 	"entrypoint": "AutoRefresh",
 	"type": "user"
